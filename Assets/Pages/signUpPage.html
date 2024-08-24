@@ -1,41 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Stylesheets/signUpPage.css">
     <title>Veer - Sign up</title>
 </head>
-<body>
-    <div class="content">
-        
-        <div class="cover">
 
+<body id="bod">
+    <div class="content">
+
+        <div class="cover">
+            <h2 class="coverHeader" onclick="switchSide()">Log in</h2>
         </div>
         <div class="login">
-            <h2 class="loginHeader">Log In</h2>
-            <form action="post">
-                <label for="username">Email : </label>
+            <h2 class="loginHeader">Log in</h2>
+            <h2 class="toSignup" onclick="getSignUp()">Sign Up</h2>
+            <form method="post">
+                <label for="email">Email : </label>
                 <br>
-                <input type="email" name="email">
+                <input type="email" id="email" name="email" aria-autocomplete="none">
                 <br>
                 <label for="password">Password</label>
                 <br>
-                <input type="password" name="password">
+                <input type="password" id="password" name="password">
                 <br>
-                <input type="checkbox"><label for="remember">Remember Me</label>
+                <input type="checkbox" id="remember"><label for="remember">Remember Me</label>
                 <br>
                 <input type="submit" value="Login">
             </form>
         </div>
         <div class="signup">
             <h2 class="signupHeader">Sign up</h2>
-            <form action="post">
-                
+            <h2 class="toLogin" onclick="getLogIn()">Log In</h2>
+            <form method="post">
+                <label for="name">Name : </label>
+                <br>
+                <input type="text" id="name" name="name" aria-autocomplete="none">
+                <br>
+                <label for="number">Phone Number : </label>
+                <br>
+                <input type="tel" id="number" name="phone_number" aria-autocomplete="none">
+                <br>
+                <label for="email1">Email : </label>
+                <br>
+                <input type="email" id="email1" name="email" aria-autocomplete="none">
+                <br>
+                <label for="password1">Password : </label>
+                <br>
+                <input type="password" id="password1" name="password">
+                <br>
+                <label for="password2">Confirm Password : </label>
+                <br>
+                <input type="password" id="password2" name="password2">
+                <br>
+                <label for="region">District : </label>
+                <select id="region" name="region">
+                    <option value="Ampara">Ampara</option>
+                    <option value="Anuradhapura">Anuradhapura</option>
+                    <option value="Badulla">Badulla</option>
+                    <option value="Baricaloa">Batticaloa</option>
+                    <option value="Colombo">Colombo</option>
+                    <option value="Galle">Galle</option>
+                    <option value="Gampaha">Gampaha</option>
+                    <option value="Hambanthota">Hambanthota</option>
+                    <option value="Jaffna">Jaffna</option>
+                    <option value="Kalutara">Kalutara</option>
+                    <option value="Kandy">Kandy</option>
+                    <option value="Kegalle">Kegalle</option>
+                    <option value="Kilinochchi">Kilinochchi</option>
+                    <option value="Kurunegala">Kurunegala</option>
+                    <option value="Mannar">Mannar</option>
+                    <option value="Matale">Matale</option>
+                    <option value="Matara">Matara</option>
+                    <option value="Monaragala">Monaragala</option>
+                    <option value="Mullativu">Mullativu</option>
+                    <option value="Nuwawra Eliya">Nuwawra Eliya</option>
+                    <option value="Polonnaruwa">Polonnaruwa</option>
+                    <option value="Puttalam">Puttalam</option>
+                    <option value="Rathnapura">Rathnapura</option>
+                    <option value="Trincomalee">Trincomalee</option>
+                    <option value="Vavuniya">Vavuniya</option>
+                </select>
+                <br>
+                <input type="checkbox" id="policy"><label for="policy">I have read and agreed to <a href="">Privacy policy</a></label>
+                <br>
+                <input type="submit" value="Signup">
             </form>
         </div>
-        
-        
     </div>
+    <script src="../script.js"></script>
 </body>
+
 </html>
