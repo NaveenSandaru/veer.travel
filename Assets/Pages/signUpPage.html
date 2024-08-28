@@ -17,7 +17,7 @@
         <div class="login">
             <h2 class="loginHeader">Log in</h2>
             <h2 class="toSignup" onclick="getSignUp()">Sign Up</h2>
-            <form method="post">
+            <form method="post" action="../Database/login.php">
                 <label for="email">Email : </label>
                 <br>
                 <input type="email" id="email" name="email" aria-autocomplete="none">
@@ -34,29 +34,29 @@
         <div class="signup">
             <h2 class="signupHeader">Sign up</h2>
             <h2 class="toLogin" onclick="getLogIn()">Log In</h2>
-            <form method="post">
+            <form method="post" action="../Database/register.php">
                 <label for="name">Name : </label>
                 <br>
-                <input type="text" id="name" name="name" aria-autocomplete="none">
+                <input type="text" id="name" name="name" aria-autocomplete="none" required>
                 <br>
                 <label for="number">Phone Number : </label>
                 <br>
-                <input type="tel" id="number" name="phone_number" aria-autocomplete="none">
+                <input type="tel" id="number" name="phone_number" aria-autocomplete="none" required>
                 <br>
                 <label for="email1">Email : </label>
                 <br>
-                <input type="email" id="email1" name="email" aria-autocomplete="none">
+                <input type="email" id="email1" name="email" aria-autocomplete="none" required>
                 <br>
                 <label for="password1">Password : </label>
                 <br>
-                <input type="password" id="password1" name="password">
+                <input type="password" id="password1" name="password" required>
                 <br>
                 <label for="password2">Confirm Password : </label>
                 <br>
-                <input type="password" id="password2" name="password2">
+                <input type="password" id="password2" name="password2" required oninput="validatePassword()">
                 <br>
                 <label for="region">District : </label>
-                <select id="region" name="region">
+                <select id="region" name="region" required>
                     <option value="Ampara">Ampara</option>
                     <option value="Anuradhapura">Anuradhapura</option>
                     <option value="Badulla">Badulla</option>
@@ -84,9 +84,9 @@
                     <option value="Vavuniya">Vavuniya</option>
                 </select>
                 <br>
-                <input type="checkbox" id="policy"><label for="policy">I have read and agreed to <a href="">Privacy policy</a></label>
+                <input type="checkbox" id="policy" required><label for="policy">I have read and agreed to <a href="">Privacy policy</a></label>
                 <br>
-                <input type="submit" value="Signup">
+                <input type="submit" value="Signup" id="regButton">
             </form>
         </div>
     </div>
