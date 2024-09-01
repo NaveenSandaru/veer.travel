@@ -5,6 +5,9 @@ let body = document.getElementById('bod');
 let bool = false;
 let login = document.getElementsByClassName('login');
 let signup = document.getElementsByClassName('signup');
+let password1 = document.getElementById('password1');
+let password2 = document.getElementById('password2');
+let registerButton = document.getElementById('regButton');
 
 function switchSide() {
     if (bool) {
@@ -48,4 +51,13 @@ function getLogIn() {
     login[0].style.left = '12%';    
     signup[0].style.right = '-100vh';
     signup[0].style.left = 'auto';
+}
+
+function validatePassword() {
+    if(password1.value != password2.value){
+        registerButton.disabled = true;
+    }
+    else{
+        registerButton.disabled = false;
+    }
 }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Veer</title>
+    <link rel="stylesheet" href="../Stylesheets/LocationsPage.css">
+</head>
+<body>
+    <div class="background" id="background">
+        
+        <div class="box1">
+            
+            <center><p>Locations</p></center>
+            <table class="loc1">
+                <tr>
+                    <td><div class="image1" onclick="Imginfo('a.jpg', 'Aa location, matara',1,'Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java,')"><img src="../Images/LocationsPage/a.jpg" alt="Location 1"></div></td>
+                    <td><div class="image1" onclick="Imginfo('a1.jpg', 'Aa location, matara',1,'image 02 description')"><img src="../Images/LocationsPage/a1.jpg" alt="Location 2"></div></td>
+                    <td><div class="image1" onclick="Imginfo('a2.jpg', 'Aa location, matara',1,'image 02 description')"><img src="../Images/LocationsPage/a2.jpg" alt="Location 3"></div></td>
+                </tr>
+                <tr>
+                    <td><div class="loc_tag"><img class="loc_i" src="../Images/LocationsPage/i.png">Aa location,matara</div></td>
+                    <td><div class="loc_tag"><img class="loc_i" src="../Images/LocationsPage/i.png">Bb location,malabe</div></td>
+                    <td><div class="loc_tag"><img class="loc_i" src="../Images/LocationsPage/i.png">Ccc location,deniyaya</div></td>
+                </tr>
+                <tr>
+                    <td><div class="image1" onclick="Imginfo('a3.jfif', 'Aa location, matara',2,'image 02 description')"><img src="../Images/LocationsPage/a3.jfif" alt="Location 4"></div></td>
+                    <td><div class="image1" onclick="Imginfo('a4.jpg', 'Aa location, matara',2,'image 02 description')"><img src="../Images/LocationsPage/a4.jpg" alt="Location 5"></div></td>
+                    <td><div class="image1" onclick="Imginfo('a5.jpg', 'Aa location, matara',2,'image 02 description')"><img src="../Images/LocationsPage/a5.jpg" alt="Location 6"></div></td>
+                </tr>
+                <tr>
+                    <td><div class="loc_tag"><img class="loc_i" src="../Images/LocationsPage/i.png">sDgsfd waterfall,badulla</div></td>
+                    <td><div class="loc_tag"><img class="loc_i" src="../Images/LocationsPage/i.png">Bns,Galle</div></td>
+                    <td><div class="loc_tag"><img class="loc_i" src="../Images/LocationsPage/i.png">Fshfsb river,morawaka</div></td>
+                </tr>
+            </table>
+                
+                
+            </div>                
+            </div>
+            <div id="information" class="information"><h2>LOCATION INFORMATION</h2>
+                <p id="TText"></p>
+                <p id="TText1"></p>
+                <img id="TImage" src="" alt="Image 1" class="info-image">
+                <div id="more-photos" class="info-image1"></div>
+
+            <h3>Reviews</h3>
+            <div id="reviews" class="reviews"></div>
+
+            <h4>Add a Review</h4>
+            <textarea id="new-review" placeholder="Write your review here..."></textarea><br>
+            <button onclick="addReview()">Submit Review</button>
+
+                <button onclick="closeInfo()">Close</button>
+            </div>
+
+            
+
+            
+    
+        <script src="../LocationsScript.js"></script>
+    
+</body>
+</html>
