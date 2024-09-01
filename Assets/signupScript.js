@@ -30,7 +30,7 @@ function switchSide() {
         cover[0].style.borderBottomRightRadius = '3vh';
         cover[0].style.borderBottomLeftRadius = '0vh';
         cover[0].style.borderTopLeftRadius = '0vh';
-        cover[0].style.background = 'url("../Images/SignUpPage/.signupCover1jpg")';
+        cover[0].style.background = 'url("../Images/SignUpPage/signupCover1.jpg")';
         cover[0].style.backgroundSize = 'cover';
         content[0].style.backgroundColor = '#114432'
         body.style.background = 'linearGradient(#0e2c0e, #114432)';
